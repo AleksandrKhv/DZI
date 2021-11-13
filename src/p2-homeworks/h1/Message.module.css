@@ -1,0 +1,52 @@
+.wrapper {
+    display: flex;
+    margin: auto;
+    border-radius: 7px;
+    background-color: aqua;
+    width: 350px;
+}
+
+.wrapper img {
+    border-radius: 50%;
+    align-self: flex-end;
+    width: 60px;
+    margin: 10px;
+}
+
+.wrapper .message {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    background-color: bisque;
+    margin:  8px 20px;
+    padding: 8px;
+    border-radius: 10px 10px 10px 0;
+}
+
+.wrapper .message:after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right: 223px;
+    width: 30px;
+    height: 25px;
+    background: radial-gradient(circle at top left, transparent 58%, bisque 60%);
+}
+
+.wrapper .message .name {
+    color: firebrick;
+    padding: 8px;
+}
+
+.wrapper .message .messages {
+    color: darkblue;
+    text-align: center;
+    margin: 0;
+}
+
+.wrapper .message .time {
+    color: grey;
+    text-align: right;
+    margin-right: 7px;
+}
+
